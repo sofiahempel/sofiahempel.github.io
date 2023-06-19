@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+
+
+<head>
+	<meta charset="utf-8">
+	<title>AFINES HOME</title>
+	<link rel="stylesheet" href="Prueba footercss.css">
+</head>
+
+
+
+<body>
+	
+	<header>
+		<nav>
+			<div class="fotologo"> 
+				<p href="index.html"> <img src="Afines Logotipo.png" alt="Afines Logotipo" style="width:150px; height:150px"> 
+				</p>
+				<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="AFINES HOME.1.html">HOME</a>
+  <a href="AFINES MENÚ.html">MENÚ</a>
+  <a href="AFINES ENCARGOS.html">ENCARGOS</a>
+  <a href="AFINES CONTACTO.html">CONTACTO</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ </button>  
+  <h2>Collapsed Sidebar</h2>
+</div>
+				<h0>A F I N E S</h0>
+				<h3>más tiempo juntos.</h3>
+			</div>
+			
+
+			
+   			<div class="MenuSuperior">
+				<a href="AFINES HOME.1.html"> HOME </a>
+      			<a href="AFINES MENÚ.html"> MENÚ </a>
+ 				<a href="AFINES ENCARGOS.html"> ENCARGOS </a>
+      			<a href="AFINES CONTACTO.html"> CONTACTO </a>
+				<div id="mySidebar" class="sidebar">
+			</div>
+    		</div>
+		</nav>
+	</header>
+	
+	<section>
+
+		<h1> ¡NUEVOS INGRESOS! </h1>
+
+		
+	<div class="slideshow-container">
+
+		<div class="mySlides fade">
+  			<div class="numbertext">1 / 3</div>
+				<img src="1.jpg" alt="Tarta de Pistachos" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+  			<div class="numbertext">2 / 3</div>
+  				<img src="2.jpg" alt="Banana Toast" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+  			<div class="numbertext">3 / 3</div>
+ 	 			<img src="3.jpg" alt="Croque Madame" style="width:100%">
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">❮</a>
+		<a class="next" onclick="plusSlides(1)">❯</a>
+
+		</div>
+		<br>
+
+		<div style="text-align:center">
+  			<span class="dot" onclick="currentSlide(1)"></span> 
+  			<span class="dot" onclick="currentSlide(2)"></span> 
+  			<span class="dot" onclick="currentSlide(3)"></span> 
+		</div>
+	
+		<div class="nuestromenusemanal">
+			<a href="AFINES MENÚ.html" class="nuestromenusemanal"> NUESTRO MENÚ SEMANAL </a>
+		</div>
+		
+	</section> 
+	
+
+<footer>
+  <div class="footer-column">
+    <h7>Navegación</h7>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#menu">Menú</a></li>
+      <li><a href="#encargos">Encargos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </div>
+  <div class="footer-column">
+    <h7>Contacto</h7>
+    <div class="contact-info">
+      <div class="contact-item">
+        <img src="Location Logotipo Transparente.png" alt="Ubicación">
+        <p>Don Bosco 361, San Isidro</p>
+      </div>
+      <div class="contact-item">
+        <img src="Teléfono Logotipo Transparente.png" alt="Teléfono">
+        <p>+54 9 11 3444 3164</p>
+      </div>
+      <div class="contact-item">
+        <img src="Instagram Logotipo Transparente.png" alt="Instagram">
+        <p>@somosafines</p>
+      </div>
+    </div>
+  </div>
+</footer>
+	
+	<script>
+		
+		let slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+  		showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+  		showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+	  let i;
+	  let slides = document.getElementsByClassName("mySlides");
+	  let dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+		}
+	
+
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+		
+	</script>
+	
+
+</body>
+</html>

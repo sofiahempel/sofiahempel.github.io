@@ -1,0 +1,548 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {font-family: Verdana, sans-serif; 
+margin:0}
+
+
+
+h0 {
+	font-family: "Helvetica Neue"; 
+	color: white; 
+	text-align: center; 
+	font-size: 26px;	
+	margin: 5px;
+  padding-bottom: 15px;
+}
+
+h1 { 
+	font-family: "Helvetica Neue"; 
+	color: #417F74; 
+	text-align: center; 
+	font-size: 22px;
+	padding: 0%;
+	margin-top: 4%;
+	padding-bottom: 0 !important;
+}
+
+h2  { 
+	font-family: "Helvetica Neue";
+	color: #417F74; 
+	text-align: center; 
+	font-size: 16px; 
+	margin-bottom:5%
+}
+
+h3 { 
+	font-family: "Helvetica Neue"; 
+	color: white; 
+	text-align: center;
+	font-size: 14px;
+	margin-bottom: 5%;
+}
+
+h4 { 
+	font-family: "Helvetica Neue"; 
+	color: white; 
+	text-align: left; 
+	font-size: 18px;
+}
+
+h6  { 
+	font-family: "Helvetica Neue";
+	color: #417F74; 
+	text-align: center; 
+	font-size: 18spx; 
+	padding-top: 4%; 
+	margin:5%
+}
+
+h7 { 
+	font-family: "Helvetica Neue"; 
+	color: white; 
+	text-align: ;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 5%;
+}
+
+.MenuSuperior1{
+	margin-bottom: 8%
+}
+
+header 
+{ 
+	display: flex;
+	margin-bottom: 6%
+}
+
+nav 
+{ 
+	width: 100%; 
+	background-color:#417F74; 
+	text-align: center; 
+	padding: 3%;
+}
+
+nav .fotologo 
+{ 
+	background-color: transparent;
+	margin-bottom: 0
+}
+
+.fotologo{
+	margin-bottom: 10px;
+	
+}
+
+nav .fotologo h3 {
+	padding-bottom: 5px;
+	margin-bottom: 5px; /* Adjust the margin as needed */
+}
+
+
+.logo-container {margin-bottom:0px;}
+
+.MenuSuperior { 
+	width: 100%;
+	margin-top: 0;
+}
+
+section div a:hover {
+	color:pink
+}
+
+.MenuSuperior a {
+	text-align: center; 
+	font-family: "Helvetica Neue"; 
+	text-decoration: none; 
+	color: #417F74;
+	border-radius: 10px;
+	background-color: white;
+	font-size: 16px; 
+	padding: 1%;
+	margin: 5% 2% 2%;
+}
+
+.MenuSuperior a:hover {
+	color:#D18AB5
+}
+
+section div {
+	width: 100%;
+	text-align: center;
+	padding: 5% 0%;
+}
+
+section div a {
+	text-decoration: none;
+	font-family: "Helvetica Neue"; 
+	color: #417F74; 
+	text-align: center; 
+	font-size: 22px;
+}
+
+section div a:hover {
+	color:pink
+}
+
+
+style
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 100%;
+  max-height: 5%;
+  position: relative;
+  margin: % !important;
+  padding: 0 !important;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+section img { 
+	width: 100%;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #BADF71;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #417F74;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 28px;
+  position: absolute;
+  top:0;
+  left:0;
+  cursor: pointer;
+  background-color: #417F74;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  display: none;
+}
+
+.openbtn:hover {
+  background-color: #417F74;
+}
+
+
+#main {
+  transition: margin-left .5s;
+}
+
+@media screen and (max-width: 760px) {
+	.MenuSuperior {
+	display: none;
+	}
+	.openbtn {
+		display: block;
+	}
+}
+
+
+
+	.secundario div{
+		flex: 100%;
+		width: 100%;
+}
+
+.nuestromenusemanal{
+	font-family: "Helvetica Neue"; 
+	position: flex;
+	color:  #417F74; 
+	text-align:center ;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom:0 ;
+	text-decoration: none;
+	margin: 5%;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+	font-family:"Helvetica Neue";
+  color: #333;
+	
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+	
+}
+
+form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #417F74;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	font-size: 15px
+}
+
+form input[type="submit"]:hover {
+    background-color: #417F74;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+  margin: 0 5 10 5;
+  background-color: #f0f0f0;
+}
+
+div.gallery:hover {
+  border: 2px solid #D18AB5;
+  background-color: #D18AB5;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+	aspect-ratio: 4/4;
+	object-fit:contain;
+}
+
+div.desc {
+  padding: 15px;
+  font-size: 15px;
+  font-weight:bold;
+  text-align: center;
+  font-family:"Helvetica Neue";
+  color: #417F74;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+
+
+footer {
+  background-color: #417F74;
+  padding: 7%;
+  display: flex;
+  font-family:"Helvetica Neue";
+  color:white; 
+  justify-content: space-between;
+  margin-top: 5%
+  
+}
+footer a:hover {
+	color:#D18AB5;
+}
+.footer-column {
+  width: 50%;
+}
+
+.footer-column h7 {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 7%;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+.container-contacto {
+    max-width: 600px;
+    width: 50%;
+    margin: auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    padding: 15px;
+    background-color: #f0f0f0;
+	border-radius: 20px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  
+}
+
+.contact-item img {
+  width: 50px; /* Aumentamos el ancho de los iconos a 30px */
+  height: 50px; /* Aumentamos la altura de los iconos a 30px */
+  margin-right: 5px;
+  object-fit: contain;
+}
+
+.contact-item p {
+  margin: 0;
+  margin-left: 5px;
+}
+
+.menuu {
+  width: 50%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.food-name {
+  font-weight: bold;
+  font-family: "Helvetica Neue"; 
+  color:  #417F74; 
+}
+
+.food-price {
+  float: right;
+  font-weight: bold;
+  font-family: "Helvetica Neue"; 
+  color:  #417F74; 
+  margin-left: 5px;
+}
+
+.food-description {
+  font-size: 12px;
+  color: #D18AB5;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+.caja {
+	font-family: "Helvetica Neue"; 
+	color: white; 
+	text-align: center;
+	width: 35%;
+     margin: 30px auto 20px auto;
+    border: 2px solid #417F74;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #417F74;
+}
+
+.caja p {
+    margin: 0;
+}
+
+.imagencafeteria {
+  margin-bottom: 20px;
+	 display: block;
+    width: 100%;
+}
