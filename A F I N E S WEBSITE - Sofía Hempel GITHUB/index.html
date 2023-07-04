@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+
+
+<head>
+	<meta charset="utf-8">
+	<title>AFINES HOME</title>
+	<link rel="stylesheet" href="AFINES ESTILOS.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+
+
+<body>
+	
+	<header>
+		<nav>
+			<div class="fotologo"> 
+				<p href="index.html"> <img src=".\Images\Afines Logotipo.png" alt="Afines Logotipo" style="width:300px; height:300px margin-bottom:10px">
+				</p>
+				<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="index.html">HOME</a>
+  <a href="AFINES MENU 2.html">CARTA</a>
+  <a href="AFINES ENCARGOS.html">ENCARGOS</a>
+  <a href="AFINES CONTACTO.html">CONTACTO</a>
+</div>
+				<h0> Tenemos mucho en común, somos A F I N E S.</h0>
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ </button>  
+  <h2>Collapsed Sidebar</h2>
+</div>
+
+
+			
+   			<div class="MenuSuperior">
+				<a href="index.html"> HOME </a>
+      			<a href="AFINES MENU 2.html"> CARTA </a>
+ 				<a href="AFINES ENCARGOS.html"> ENCARGOS </a>
+      			<a href="AFINES CONTACTO.html"> CONTACTO </a>
+				<div id="mySidebar" class="sidebar">
+			</div>
+    		</div>
+		</nav>
+	</header>
+
+	<section>
+
+		<h1> ¡NUEVOS INGRESOS! </h1>
+
+		
+	<div class="slideshow-container">
+
+		<div class="mySlides fade">
+  			
+				<img src=".\Images\1.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+  			
+  				<img src=".\Images\2.jpg" alt="Banana Toast" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+  		
+ 	 			<img src=".\Images\3.jpg" alt="Croque Madame" style="width:100%">
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">❮</a>
+		<a class="next" onclick="plusSlides(1)">❯</a>
+
+		</div>
+		<br>
+
+		<div style="text-align:center">
+  			<span class="dot" onclick="currentSlide(1)"></span> 
+  			<span class="dot" onclick="currentSlide(2)"></span> 
+  			<span class="dot" onclick="currentSlide(3)"></span> 
+		</div>
+	
+		<div class="caja-menusemanal">
+		<a href="AFINES MENU 2.html">¡MIRÁ NUESTRO MENÚ SEMANAL!</a>
+			</div>
+	</div>
+		
+	</section> 
+	
+
+<footer>
+  <div class="footer-column">
+    <h7>Navegación</h7>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="AFINES MENU 2.html">Carta</a></li>
+      <li><a href="AFINES ENCARGOS.html">Encargos</a></li>
+      <li><a href="AFINES CONTACTO.html">Contacto</a></li>
+    </ul>
+  </div>
+  <div class="footer-column">
+    <h7>Contacto</h7>
+    <div class="contact-info">
+      <div class="contact-item">
+        <img src=".\Images\Location Logotipo Transparente.png" alt="Ubicación">
+        <p>Don Bosco 361, San Isidro</p>
+      </div>
+      <div class="contact-item">
+        <img src=".\Images\Telefono Logotipo Transparente.png" alt="Teléfono">
+        <p>+54 9 11 3444 3164</p>
+      </div>
+      <div class="contact-item">
+		  <a href="https://www.instagram.com/somosafines">
+        <img src=".\Images\Instagram Logotipo Transparente.png" alt="Instagram">
+		  </a>
+		  <a href="https://www.instagram.com/somosafines">
+        <p>@somosafines</p>
+		  </a>
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+	<script>
+		
+		let slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+  		showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+  		showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+	  let i;
+	  let slides = document.getElementsByClassName("mySlides");
+	  let dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+		}
+	
+
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+		
+	</script>
+	
+
+</body>
+</html>
